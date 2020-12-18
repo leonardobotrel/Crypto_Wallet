@@ -1,7 +1,11 @@
-<h1>Seja Bem-Vindo!</h1>
-<p><strong>Data: </strong> <%= data_br(Date.today) %></p>
-<ul>
-    <li>
-        <%= link_to "Cadastro de Moedas", coins_path %>
-    </li>
-</ul>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('welcome') %></h1>
+  <p class="lead"><%= t('welcome_msg') %></p>
+  <hr class="my-4">
+  <p><%= t('menu_msg') %></p>
+  <p class="lead">
+    <%= render "menu" %>
+  </p>
+</div>
+
+
